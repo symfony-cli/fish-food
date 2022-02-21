@@ -1,5 +1,5 @@
 local name = "symfony-cli"
-local version = "5.3.4"
+local version = "5.4.0"
 
 food = {
     name = name,
@@ -9,10 +9,49 @@ food = {
     version = version,
     packages = {
         {
+            os = "linux",
+            arch = "arm64",
+            url = "https://github.com/symfony-cli/symfony-cli/releases/download/v5.4.0/symfony-cli_linux_arm64.tar.gz",
+            sha256 = "cda3cee7b7b48b36fa030a9ef21f56cd032f5e4664d2c777e05457687674bfd6",
+            resources = {
+                {
+                    path = "symfony",
+                    installpath = "bin/symfony",
+                    executable = true
+                },
+            }
+        },
+        {
+            os = "darwin",
+            arch = "amd64",
+            url = "https://github.com/symfony-cli/symfony-cli/releases/download/v5.4.0/symfony-cli_darwin_all.tar.gz",
+            sha256 = "6e05f52b0dc4debc3d4a6400f14c1acd0c036c124edc6798095c70972377c08f",
+            resources = {
+                {
+                    path = "symfony",
+                    installpath = "bin/symfony",
+                    executable = true
+                },
+            }
+        },
+        {
+            os = "darwin",
+            arch = "arm64",
+            url = "https://github.com/symfony-cli/symfony-cli/releases/download/v5.4.0/symfony-cli_darwin_all.tar.gz",
+            sha256 = "6e05f52b0dc4debc3d4a6400f14c1acd0c036c124edc6798095c70972377c08f",
+            resources = {
+                {
+                    path = "symfony",
+                    installpath = "bin/symfony",
+                    executable = true
+                },
+            }
+        },
+        {
             os = "windows",
             arch = "amd64",
-            url = "https://github.com/symfony-cli/symfony-cli/releases/download/v5.3.4/symfony-cli_windows_amd64.zip",
-            sha256 = "9de74f33286bb17dfec9c4ce93e102fa7c48c9c358c8b8a307c7f53778315e86",
+            url = "https://github.com/symfony-cli/symfony-cli/releases/download/v5.4.0/symfony-cli_windows_amd64.zip",
+            sha256 = "f43ecfc7cb8d30ff24ff5219dd25d5f415bf02655af59b61c23da922d1bff7d5",
             resources = {
                 {
                     path = "symfony.exe",
@@ -22,48 +61,9 @@ food = {
         },
         {
             os = "linux",
-            arch = "arm64",
-            url = "https://github.com/symfony-cli/symfony-cli/releases/download/v5.3.4/symfony-cli_linux_arm64.tar.gz",
-            sha256 = "ef7d91dc4d1db7c30bd032ad430195c581c46dc2156c21b6cb4feba2a7c60a27",
-            resources = {
-                {
-                    path = "symfony",
-                    installpath = "bin/symfony",
-                    executable = true
-                },
-            }
-        },
-        {
-            os = "darwin",
             arch = "amd64",
-            url = "https://github.com/symfony-cli/symfony-cli/releases/download/v5.3.4/symfony-cli_darwin_all.tar.gz",
-            sha256 = "8a15bcbeb700f5daa38428479c3a1a6abe9ffe5e13e1ab1e42b0c384cde11966",
-            resources = {
-                {
-                    path = "symfony",
-                    installpath = "bin/symfony",
-                    executable = true
-                },
-            }
-        },
-        {
-            os = "darwin",
-            arch = "arm64",
-            url = "https://github.com/symfony-cli/symfony-cli/releases/download/v5.3.4/symfony-cli_darwin_all.tar.gz",
-            sha256 = "8a15bcbeb700f5daa38428479c3a1a6abe9ffe5e13e1ab1e42b0c384cde11966",
-            resources = {
-                {
-                    path = "symfony",
-                    installpath = "bin/symfony",
-                    executable = true
-                },
-            }
-        },
-        {
-            os = "linux",
-            arch = "amd64",
-            url = "https://github.com/symfony-cli/symfony-cli/releases/download/v5.3.4/symfony-cli_linux_amd64.tar.gz",
-            sha256 = "0195dea95df5545613f7b23a8265dbb3330b1687ad1d4eb1695f8f468d3d36be",
+            url = "https://github.com/symfony-cli/symfony-cli/releases/download/v5.4.0/symfony-cli_linux_amd64.tar.gz",
+            sha256 = "3943c528741e3aa34e6aba1d5267be0a8454ff468564382e373a717b4b996c9c",
             resources = {
                 {
                     path = "symfony",
